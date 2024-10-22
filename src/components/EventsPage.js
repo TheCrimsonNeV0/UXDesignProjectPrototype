@@ -1,10 +1,8 @@
 import React from 'react';
 import TopMenu from "./TopMenu";
 import SearchBarEvents from "./events/SearchBarEvents";
-import ContentTypeFilter from "./library/ContentTypeFilter";
-import BookContainer from "./library/BookContainer";
-import EventContainer from "./library/EventContainer";
 import EventContainerGrid from "./library/EventContainerGrid";
+import ContentTypeFilterEvents from "./events/ContentTypeFilterEvents";
 
 function EventsPage(props) {
     return (
@@ -22,7 +20,7 @@ function EventsPage(props) {
             </div>
             <div className="grid">
                 <div className="col-1" style={{marginTop: "5vh", marginLeft: "2vw"}}>
-                    <ContentTypeFilter/>
+                    <ContentTypeFilterEvents/>
                 </div>
                 <div className="col-1"/>
                 <div className="col-9" style={{marginTop: "5vh", marginBottom: "3vh", marginLeft: "3vw"}}>

@@ -2,7 +2,7 @@ import React from 'react';
 import {Checkbox} from "@mui/material";
 import {Button} from "primereact/button";
 
-function ContentTypeFilter(props) {
+function ContentTypeFilterLibrary(props) {
     return (
         <div>
             <div> Books: <Checkbox/></div>
@@ -16,4 +16,4 @@ function ContentTypeFilter(props) {
     );
 }
 
-export default ContentTypeFilter;
+export default ContentTypeFilterLibrary;
