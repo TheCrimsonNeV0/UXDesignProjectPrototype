@@ -13,6 +13,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from "./components/MainPage";
 import LibraryCatalogPage from "./components/LibraryCatalogPage";
 import EventsPage from "./components/EventsPage";
+import LoginPage from "./components/LoginPage";
+import ProfilePage from "./components/ProfilePage";
+import LocationHours from "./components/LocationHours";
 
 function App() {
     return (
@@ -23,6 +26,9 @@ function App() {
                         <Route path="/" element={<MainPage />} />
                         <Route path="/library" element={<LibraryCatalogPage />} />
                         <Route path="/events" element={<EventsPage />} />
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route path="/profile" element={<ProfilePage />} />
+                        <Route path="/locations" element={<LocationHours />} />
                     </Routes>
                 </Router>
             </div>

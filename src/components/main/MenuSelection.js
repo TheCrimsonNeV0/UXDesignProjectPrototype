@@ -1,7 +1,14 @@
 import React from 'react';
 import {Button} from "primereact/button";
+import {useNavigate} from "react-router-dom";
 
 function MenuSelection(props) {
+    const navigate = useNavigate();
+
+    const locationsClick = () => {
+        navigate("/locations");
+    }
+
     return (
         <div className="grid">
             <div className="col-2"/>
@@ -14,7 +21,7 @@ function MenuSelection(props) {
                         <Button style={{width: "15vw", height: "10vh"}} label="Get a Library Card"/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "10vh"}} label="Location Hours"/>
+                        <Button style={{width: "15vw", height: "10vh"}} label="Locations & Hours" onClick={locationsClick}/>
                     </div>
                     <div className="col-3">
                         <Button style={{width: "15vw", height: "10vh"}} label="Connect"/>

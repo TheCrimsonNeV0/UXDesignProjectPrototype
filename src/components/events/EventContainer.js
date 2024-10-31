@@ -1,7 +1,6 @@
 import React from 'react';
 import {Card} from "primereact/card";
 import event from "../../images/event.jpg";
-import {Button} from "primereact/button";
 
 function EventContainer(props) {
     return (
