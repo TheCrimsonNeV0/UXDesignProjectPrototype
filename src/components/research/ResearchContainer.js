@@ -5,7 +5,7 @@ import {Button} from "primereact/button"; // Correctly import the image
 
 function ResearchContainer(props) {
     return (
-        <div style={{ height: "50%", marginBottom: "-6vh" }}>
+        <div style={{marginBottom: "3vh"}}>
             <Card style={{ width: "100%", height: "70%", outline: '2px solid black' }}>
                 <div className="grid">
                     <div className="col-2">

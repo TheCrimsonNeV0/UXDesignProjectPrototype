@@ -5,7 +5,7 @@ import 'primeicons/primeicons.css';
 import 'primereact/resources/primereact.min.css'; // PrimeReact CSS
 import 'primereact/resources/themes/saga-blue/theme.css'; // Theme (optional)
 import 'primeflex/primeflex.css'; // PrimeFlex for grid system
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import { PrimeReactProvider } from 'primereact/api';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -22,7 +22,7 @@ import CheckoutsPage from "./components/CheckoutsPage";
 function App() {
     return (
         <PrimeReactProvider>
-            <div className="App">
+            <div className="App" style={{overflowX: "hidden", overflowY: "hidden"}}>
                 <Router>
                     <Routes>
                         <Route path="/" element={<MainPage />} />

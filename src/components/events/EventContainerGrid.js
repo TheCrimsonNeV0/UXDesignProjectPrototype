@@ -5,10 +5,10 @@ function EventContainerGrid(props) {
     return (
         <div className="grid">
             <div className="col-6">
-                <EventContainer />
+                <EventContainer event={props.event1}/>
             </div>
             <div className="col-6">
-                <EventContainer />
+                <EventContainer event={props.event2}/>
             </div>
         </div>
     );

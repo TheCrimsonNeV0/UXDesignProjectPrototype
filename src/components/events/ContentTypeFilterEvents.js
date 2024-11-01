@@ -14,11 +14,11 @@ function ContentTypeFilter(props) {
             <div>
                 Event Date: <Calendar style={{marginBottom: "1vh"}} value={date} onChange={(e) => setDate(e.value)} />
             </div>
-            <div style={{marginBottom: "1vh"}}> <Button label="Today"/> </div>
-            <div style={{marginBottom: "1vh"}}> <Button label="Tomorrow"/> </div>
-            <div style={{marginBottom: "1vh"}}> <Button label="This Week"/> </div>
-            <div style={{marginBottom: "1vh"}}> <Button label="This Month"/> </div>
-            <div style={{marginTop: "1vh"}}> <Button label="Show Available" /> </div>
+            <div style={{marginBottom: "1vh"}}> <Button label="Today" style={{backgroundColor: "blueviolet"}}/> </div>
+            <div style={{marginBottom: "1vh"}}> <Button label="Tomorrow" style={{backgroundColor: "blueviolet"}}/> </div>
+            <div style={{marginBottom: "1vh"}}> <Button label="This Week" style={{backgroundColor: "blueviolet"}}/> </div>
+            <div style={{marginBottom: "1vh"}}> <Button label="This Month" style={{backgroundColor: "blueviolet"}}/> </div>
+            <div style={{marginTop: "1vh"}}> <Button label="Show Available" style={{backgroundColor: "gray"}}/> </div>
         </div>
     );
 }

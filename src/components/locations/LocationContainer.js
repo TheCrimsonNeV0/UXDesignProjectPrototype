@@ -4,7 +4,7 @@ import event from "../../images/event.jpg";
 
 function LocationContainer(props) {
     return (
-        <div style={{marginBottom: "-6vh", textAlign: "center"}}>
+        <div style={{textAlign: "center"}}>
             <div style={{display: "inline-block", position: "relative"}}>
                 <div className="grid">
                     <div className="col-6">

@@ -18,7 +18,7 @@ function QuickSelectionMenu(props) {
     }
 
     return (
-        <div className="grid" style={{height: "7vh"}}>
+        <div className="grid" style={{height: "auto"}}>
             <div className="col-2"/>
             <div className="col-8">
                 <div className="grid">
