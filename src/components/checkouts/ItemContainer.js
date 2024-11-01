@@ -18,18 +18,18 @@ function ItemContainer(props) {
             <Card style={{ width: "100%", height: "90%", outline: '2px solid black' }}>
                 <div className="grid">
                     <div className="col-2">
-                        <img src={cover} alt="Book Cover" style={{ width: "70%" }} />
+                        <img src={props.item.cover} alt="Book Cover" style={{ width: "70%" }} />
                     </div>
                     <div className="col-9">
                         <div style={{fontSize: "3vw", textAlign: "left"}}>
-                            Book Name
+                            {props.item.name}
                         </div>
                         <div style={{fontSize: "2vw", textAlign: "left"}}>
-                            Author Name
+                            {props.item.author}
                         </div>
                         <div style={{fontSize: "1vw", textAlign: "left", marginTop: "3vh"}}>
                             <div>
-                                <div> Borrowed Branch: Main Branch</div>
+                                <div> Borrowed Branch: {props.item.borrowed_branch}</div>
                                 <div> Due Date: {dueDate.toLocaleDateString('en-US')}</div>
                             </div>
                         </div>

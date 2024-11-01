@@ -16,23 +16,21 @@ function LocationContainer(props) {
                             justifyContent: "center",
                             alignItems: "center"
                         }}>
-                            <img src={event} alt="Location Picture" style={{width: "100%"}}/>
+                            <img src={props.location.photo} alt="Location Picture" style={{width: "100%"}}/>
                         </Card>
                     </div>
 
-                    <div className="col-1"/>
-
                     <div className="col-5" style={{marginTop: "2vh"}}>
                         <div style={{fontSize: "3vh"}}>
-                            Branch Name
+                            {props.location.name}
+                        </div>
+
+                        <div style={{fontSize: "2vh"}}>
+                            {props.location.address}
                         </div>
 
                         <div style={{fontSize: "2.5vh"}}>
-                            Library Address
-                        </div>
-
-                        <div style={{fontSize: "2.5vh"}}>
-                            (904) 555-5555
+                            {props.location.number}
                         </div>
 
                         <div style={{fontSize: "2.5vh", marginTop: "2vh"}}>

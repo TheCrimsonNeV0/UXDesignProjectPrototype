@@ -1,11 +1,19 @@
 import React from 'react';
 import TopMenu from "./TopMenu";
 import SearchBarCheckouts from "./checkouts/SearchBarCheckouts";
-import ContentTypeFilterLibrary from "./library/ContentTypeFilterLibrary";
-import BookContainer from "./library/BookContainer";
 import ItemContainer from "./checkouts/ItemContainer";
+import naughty_on_ice from '../images/books/naughty_on_ice.jpg';
 
 function CheckoutsPage(props) {
+    const checkouts = [{
+        cover: naughty_on_ice,
+        name: "Naughty on Ice",
+        author: "Maia Chance",
+        borrowed_branch: "Main Branch"
+    }, {
+
+    }];
+
     return (
         <div>
             <TopMenu/>
@@ -22,7 +30,7 @@ function CheckoutsPage(props) {
             <div className="grid">
                 <div className="col-1"/>
                 <div className="col-10" style={{marginTop: "5vh"}}>
-                    <ItemContainer/>
+                    <ItemContainer item={checkouts[0]}/>
                 </div>
                 <div className="col-1"/>
             </div>
