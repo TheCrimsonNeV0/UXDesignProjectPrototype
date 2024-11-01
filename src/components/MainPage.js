@@ -3,7 +3,7 @@ import { Button } from 'primereact/button';
 import 'primeflex/primeflex.css';
 import TopMenu from "./TopMenu";
 import {SearchIcon} from "primereact/icons/search";
-import MenuSelection from "./main/MenuSelection";
+import MenuSelectionMain from "./main/MenuSelectionMain";
 import SearchBarMain from "./main/SearchBarMain";
 import QuickSelectionMenu from "./main/QuickSelectionMenu";
 import BottomMenu from "./BottomMenu"; // Import PrimeFlex for the grid system
@@ -13,7 +13,7 @@ function MainPage(props) {
         <div>
             <TopMenu />
             <div style={{marginTop: "5vh"}}>
-                <MenuSelection />
+                <MenuSelectionMain />
             </div>
             <div style={{marginTop: "5vh"}}>
                 <SearchBarMain />

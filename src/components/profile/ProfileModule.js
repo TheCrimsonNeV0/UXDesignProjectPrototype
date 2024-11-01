@@ -2,12 +2,12 @@ import React from 'react';
 
 function ProfileModule(props) {
     return (
-        <div>
+        <div style={{fontSize: "1vw"}}>
             <div className="grid">
                 <div className="col-3"/>
                 <div className="col-5">
                     <div className="grid">
-                        <div className="col-3">
+                        <div className="col-4">
                             Name:
                         </div>
                         <div className="col-8">
@@ -22,7 +22,7 @@ function ProfileModule(props) {
                 <div className="col-3"/>
                 <div className="col-5">
                     <div className="grid">
-                        <div className="col-3">
+                        <div className="col-4">
                             Phone Number:
                         </div>
                         <div className="col-8">
@@ -37,7 +37,7 @@ function ProfileModule(props) {
                 <div className="col-3"/>
                 <div className="col-5">
                     <div className="grid">
-                        <div className="col-3">
+                        <div className="col-4">
                             E-mail:
                         </div>
                         <div className="col-8">
@@ -52,7 +52,7 @@ function ProfileModule(props) {
                 <div className="col-3"/>
                 <div className="col-5">
                     <div className="grid">
-                        <div className="col-3">
+                        <div className="col-4">
                             Card Number:
                         </div>
                         <div className="col-8">
@@ -67,7 +67,7 @@ function ProfileModule(props) {
                 <div className="col-3"/>
                 <div className="col-5">
                     <div className="grid">
-                        <div className="col-3">
+                        <div className="col-4">
                             Pickup Location:
                         </div>
                         <div className="col-8">

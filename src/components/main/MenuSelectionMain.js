@@ -2,8 +2,12 @@ import React from 'react';
 import {Button} from "primereact/button";
 import {useNavigate} from "react-router-dom";
 
-function MenuSelection(props) {
+function MenuSelectionMain(props) {
     const navigate = useNavigate();
+
+    const registerClick = () => {
+        navigate("/login");
+    }
 
     const locationsClick = () => {
         navigate("/locations");
@@ -18,7 +22,7 @@ function MenuSelection(props) {
                         <Button style={{width: "15vw", height: "10vh"}} label="Home"/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "10vh"}} label="Get a Library Card"/>
+                        <Button style={{width: "15vw", height: "10vh"}} label="Get a Library Card" onClick={registerClick}/>
                     </div>
                     <div className="col-3">
                         <Button style={{width: "15vw", height: "10vh"}} label="Locations & Hours" onClick={locationsClick}/>
@@ -33,4 +37,4 @@ function MenuSelection(props) {
     );
 }
 
-export default MenuSelection;
+export default MenuSelectionMain;

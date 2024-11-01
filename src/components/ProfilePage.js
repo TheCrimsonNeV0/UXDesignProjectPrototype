@@ -3,29 +3,34 @@ import TopMenu from "./TopMenu";
 import BottomMenu from "./BottomMenu";
 import ProfileModule from "./profile/ProfileModule";
 import profile from '../images/profile.jpg';
-import {Card} from "primereact/card";
 import UserStatsCard from "./profile/UserStatsCard";
+import MenuSelectionProfile from "./profile/MenuSelectionProfile";
 
 function ProfilePage(props) {
     return (
         <div>
             <TopMenu/>
-            <div style={{marginTop: "20vh"}}>
+            <div style={{marginTop: "5vh"}}>
+                <MenuSelectionProfile/>
+            </div>
+
+            <div style={{marginTop: "12vh"}}>
                 <div className="grid">
-                    <div className="col-9">
+                    <div className="col-9" style={{marginTop: "-5vh"}}>
                         <ProfileModule/>
                     </div>
                     <div className="col-2">
-                        <img src={profile} style={{width: "100%", marginLeft: "-30vw", marginTop: "-8vh"}}/>
+                        <img src={profile} alt="Profile Picture"
+                             style={{width: "12vw", marginLeft: "-30vw", marginTop: "-10vh", alignContent: "center"}}/>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div className="grid">
-                    <div className="col-2"/>
-                    <div className="col-8">
-                        <UserStatsCard />
+                <div className="grid" style={{marginTop: "1vh"}}>
+                    <div className="col-3"/>
+                    <div className="col-6">
+                        <UserStatsCard/>
                     </div>
                     <div className="col-2"/>
                 </div>

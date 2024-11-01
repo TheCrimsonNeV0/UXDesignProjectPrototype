@@ -22,20 +22,12 @@ function LocationHours(props) {
                 <SearchBarLocations/>
             </div>
             <div className="grid">
-                <div className="col-1" style={{marginTop: "5vh", marginLeft: "2vw"}}>
-                    <ContentTypeFilterEvents/>
-                </div>
-                <div className="col-1"/>
-                <div className="col-9" style={{marginTop: "5vh", marginBottom: "3vh", marginLeft: "3vw"}}>
+                <div className="col-12" style={{marginTop: "5vh", marginBottom: "1vh", marginLeft: "3vw"}}>
                     <LocationContainerGrid/>
                 </div>
             </div>
             <div className="grid" style={{marginTop: "5vh"}}>
-                <div className="col-1" style={{marginTop: "5vh", marginLeft: "2vw"}}>
-
-                </div>
-                <div className="col-1"/>
-                <div className="col-9" style={{marginTop: "5vh", marginBottom: "3vh", marginLeft: "3vw"}}>
+                <div className="col-12" style={{marginBottom: "3vh", marginLeft: "3vw"}}>
                     <LocationContainerGrid/>
                 </div>
             </div>

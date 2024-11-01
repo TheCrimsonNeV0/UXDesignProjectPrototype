@@ -11,7 +11,7 @@ function TopMenu(props) {
     };
 
     const userClick = () => {
-        navigate("/login");
+        navigate("/profile");
     };
 
     return (
