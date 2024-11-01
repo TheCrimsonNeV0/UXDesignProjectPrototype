@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Button} from "primereact/button";
 import {Dropdown} from "primereact/dropdown";
 
-let languages = ["English", "Spanish", "French", "Italian", "Japanese"]
+const languages = ["English", "Spanish", "French", "Italian", "Japanese"]
 
 function BottomMenu(props) {
+    const [language, setLanguage] = useState("English");
+
     return (
         <div className="grid">
             <div className="col-10">
@@ -30,7 +32,10 @@ function BottomMenu(props) {
                 </div>
             </div>
             <div className="col-2">
-                <Dropdown style={{width: "100%"}} options={languages} placeholder="Select Language"> </Dropdown>
+                <Dropdown style={{width: "100%"}} value={language} options={languages} placeholder="Select Language"
+                onChange={(e) => {
+                    setLanguage(e.value);
+                }}/>
             </div>
         </div>
     );

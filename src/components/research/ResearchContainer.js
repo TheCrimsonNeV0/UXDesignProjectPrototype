@@ -32,7 +32,7 @@ function ResearchContainer(props) {
                             <div className="grid">
                                 <div className="col-11"/>
                                 <div className="col-1">
-                                    <Button style={{width: "10vw", height: "8vh"}} label="Download"/>
+                                    <Button style={{width: "10vw", height: "8vh"}} label="Download" onClick={() => {alert("Download Started Successfully");}}/>
                                 </div>
                             </div>
                         </div>
