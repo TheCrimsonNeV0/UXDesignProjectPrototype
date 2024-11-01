@@ -1,9 +1,5 @@
 import React from 'react';
 import TopMenu from "./TopMenu";
-import SearchBarEvents from "./events/SearchBarEvents";
-import ContentTypeFilterEvents from "./events/ContentTypeFilterEvents";
-import EventContainerGrid from "./events/EventContainerGrid";
-import LocationContainer from "./locations/LocationContainer";
 import LocationContainerGrid from "./locations/LocationContainerGrid";
 import SearchBarLocations from "./locations/SearchBarLocations";
 

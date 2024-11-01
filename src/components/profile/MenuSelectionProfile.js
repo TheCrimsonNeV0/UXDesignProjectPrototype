@@ -5,8 +5,12 @@ import {useNavigate} from "react-router-dom";
 function MenuSelectionProfile(props) {
     const navigate = useNavigate();
 
-    const locationsClick = () => {
-        navigate("/locations");
+    const homeClick = () => {
+        navigate("/");
+    }
+
+    const checkoutsClick = () => {
+        navigate("/checkouts");
     }
 
     return (
@@ -15,10 +19,10 @@ function MenuSelectionProfile(props) {
             <div className="col-8">
                 <div className="grid">
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "5vh"}} label="Home"/>
+                        <Button style={{width: "15vw", height: "5vh"}} label="Home" onClick={homeClick}/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "5vh"}} label="Checkouts"/>
+                        <Button style={{width: "15vw", height: "5vh"}} label="Checkouts" onClick={checkoutsClick}/>
                     </div>
                     <div className="col-3">
                         <Button style={{width: "15vw", height: "5vh"}} label="Bookmarks"/>

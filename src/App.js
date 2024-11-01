@@ -16,6 +16,8 @@ import EventsPage from "./components/EventsPage";
 import LoginPage from "./components/LoginPage";
 import ProfilePage from "./components/ProfilePage";
 import LocationHours from "./components/LocationHours";
+import ResearchPage from "./components/ResearchPage";
+import CheckoutsPage from "./components/CheckoutsPage";
 
 function App() {
     return (
@@ -29,6 +31,8 @@ function App() {
                         <Route path="/login" element={<LoginPage />} />
                         <Route path="/profile" element={<ProfilePage />} />
                         <Route path="/locations" element={<LocationHours />} />
+                        <Route path="/research" element={<ResearchPage />} />
+                        <Route path="/checkouts" element={<CheckoutsPage />} />
                     </Routes>
                 </Router>
             </div>

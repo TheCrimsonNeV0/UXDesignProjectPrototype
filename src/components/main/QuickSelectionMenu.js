@@ -13,6 +13,10 @@ function QuickSelectionMenu(props) {
         navigate("/events");
     }
 
+    const researchClick = () => {
+        navigate("/research");
+    }
+
     return (
         <div className="grid" style={{height: "7vh"}}>
             <div className="col-2"/>
@@ -20,30 +24,31 @@ function QuickSelectionMenu(props) {
                 <div className="grid">
                     <div className="col-3">
                         <div style={{textAlign: "center"}}>
-                            <Button style={{height: "20vh", width: "20vh"}}
-                                    icon={<i className="pi pi-book" style={{fontSize: "8vh"}}
+                            <Button style={{backgroundColor: "green", height: "20vh", width: "20vh"}}
+                                    icon={<i className="pi pi-book" style={{fontSize: "12vh"}}
                                     onClick={libraryClick}></i>}/>
                             <p>Library Catalog</p>
                         </div>
                     </div>
                     <div className="col-3">
                         <div style={{textAlign: "center"}}>
-                            <Button style={{height: "20vh", width: "20vh"}}
-                                    icon={<i className="pi pi-tablet" style={{fontSize: "8vh"}}></i>}/>
+                            <Button style={{backgroundColor: "gray", height: "20vh", width: "20vh"}}
+                                    icon={<i className="pi pi-tablet" style={{fontSize: "12vh"}}></i>}/>
                             <p>Digital Library</p>
                         </div>
                     </div>
                     <div className="col-3">
                         <div style={{textAlign: "center"}}>
-                            <Button style={{height: "20vh", width: "20vh"}}
-                                    icon={<i className="pi pi-clipboard" style={{fontSize: "8vh"}}></i>}/>
+                            <Button style={{backgroundColor: "brown", height: "20vh", width: "20vh"}}
+                                    icon={<i className="pi pi-clipboard" style={{fontSize: "12vh"}}></i>}
+                                    onClick={researchClick}/>
                             <p>Research Database</p>
                         </div>
                     </div>
                     <div className="col-3">
                         <div style={{textAlign: "center"}}>
-                            <Button style={{height: "20vh", width: "20vh"}}
-                                    icon={<i className="pi pi-calendar" style={{fontSize: "8vh"}}
+                            <Button style={{backgroundColor: "#BA8E23", height: "20vh", width: "20vh"}}
+                                    icon={<i className="pi pi-calendar" style={{fontSize: "12vh"}}
                                     onClick={eventsClick}></i>}/>
                             <p>Events</p>
                         </div>
