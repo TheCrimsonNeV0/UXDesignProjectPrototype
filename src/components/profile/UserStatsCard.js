@@ -1,9 +1,10 @@
 import React from 'react';
 import {Card} from "primereact/card";
 import {Menu} from 'primereact/menu';
+import {Button} from "primereact/button";
 
 function UserStatsCard(props) {
-    let items = [{label: 'Book1'}, {label: 'Book2'}];
+    let items = [{label: 'Book1'}, {label: 'Book2'}, {label: 'Book3'}];
 
     return (
         <div>
@@ -19,7 +20,14 @@ function UserStatsCard(props) {
                 </div>
                 <div>
                     Interlibrary Loans:
-                    <Menu style={{marginTop: "1.5vh", marginLeft: "2vw"}} model={items} />
+                    <div className="grid">
+                        <div className="col-3" style={{verticalAlign: "center"}}>
+                            <Menu style={{marginTop: "1.5vh", marginLeft: "2vw"}} model={items} />
+                        </div>
+                        <div className="col-3">
+                            <Button label="Request New Loan" style={{backgroundColor: "lightcoral", marginTop: "1.5vh"}}/>
+                        </div>
+                    </div>
                 </div>
             </Card>
         </div>

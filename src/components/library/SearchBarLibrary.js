@@ -16,6 +16,10 @@ function SearchBarLibrary(props) {
         navigate("/");
     }
 
+    const interlibraryLoansClick = () => {
+        navigate("/profile"); // To view the interlibrary loans in the prototype
+    }
+
     return (
         <div>
             <div className="grid" style={{height: "12vh"}}>
@@ -44,7 +48,7 @@ function SearchBarLibrary(props) {
                     <Button label="Interlibrary Loans" style={{
                         width: "90%", height: "8vh", right: "1vw",
                         top: "10%", fontSize: "1vw"
-                    }}/>
+                    }} onClick={interlibraryLoansClick}/>
                 </div>
             </div>
 

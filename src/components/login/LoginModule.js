@@ -2,8 +2,15 @@ import React from 'react';
 import {InputText} from "primereact/inputtext";
 import {Checkbox} from "@mui/material";
 import {Button} from "primereact/button";
+import {useNavigate} from "react-router-dom";
 
 function LoginModule(props) {
+    const navigate = useNavigate();
+
+    const loginClick = () => {
+        navigate('/profile');
+    }
+
     return (
         <div>
             <div className="grid">
@@ -66,7 +73,10 @@ function LoginModule(props) {
             <div className="grid">
                 <div className="col-4"/>
                 <div className="col-4">
-                    <Button label="Login" style={{width: "100%"}}/>
+                    <Button label="Login" style={{width: "100%"}} onClick={(e) => {
+                        alert("Login Successful");
+                        loginClick();
+                    }}/>
                 </div>
                 <div className="col-4"/>
             </div>

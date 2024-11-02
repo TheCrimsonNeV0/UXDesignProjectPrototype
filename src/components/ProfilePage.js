@@ -27,7 +27,7 @@ function ProfilePage(props) {
             </div>
 
             <div>
-                <div className="grid" style={{marginTop: "1vh"}}>
+                <div className="grid" style={{marginTop: "1vh", marginBottom: "12vh"}}>
                     <div className="col-3"/>
                     <div className="col-6">
                         <UserStatsCard/>
