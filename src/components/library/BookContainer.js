@@ -4,8 +4,8 @@ import {Button} from "primereact/button"; // Correctly import the image
 
 function BookContainer(props) {
     return (
-        <div style={{ height: "70vh" }}>
-            <Card style={{ width: "100%", height: "60vh", outline: '2px solid black' }}>
+        <div style={{ height: "70vh", marginBottom: "3vh" }}>
+            <Card style={{ width: "100%", height: "70vh", outline: '2px solid black' }}>
                 <div className="grid">
                     <div className="col-2">
                         <img src={props.cover} alt="Book Cover" style={{ width: "100%" }} />
@@ -24,7 +24,7 @@ function BookContainer(props) {
                             <div className="grid">
                                 <div className="col-11"/>
                                 <div className="col-1">
-                                    <Button style={{position: "relative", bottom: 0, left: 0, width: "10vw", height: "8vh"}}
+                                    <Button style={{position: "relative", bottom: 2, left: 0, width: "10vw", height: "8vh"}}
                                             label="Place Hold" onClick={() => {alert("Hold Placed Successfully")}} />
                                 </div>
                             </div>
