@@ -1,16 +1,23 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Button} from "primereact/button";
 import logo from "../images/logo.png";
 import {useNavigate} from "react-router-dom";
+import {AuthContext} from "../context/AuthContext";
 
 function TopMenu(props) {
+    const {isLoggedIn, setIsLoggedIn} = useContext(AuthContext);
+
     const navigate = useNavigate();
 
     const logoClick = () => {
         navigate("/");
     };
 
-    const userClick = () => {
+    const userClickLogin = () => {
+        navigate("/login");
+    };
+
+    const userClickProfile = () => {
         navigate("/profile");
     };
 
@@ -42,7 +49,7 @@ function TopMenu(props) {
 
                     <div className={"col-3"}>
                         <Button style={{width: "6vh", height: "6vh", marginTop: "1vh"}} icon="pi pi-user"
-                        onClick={userClick}/>
+                        onClick={isLoggedIn ? userClickProfile : userClickLogin}/>
                     </div>
                 </div>
             </div>

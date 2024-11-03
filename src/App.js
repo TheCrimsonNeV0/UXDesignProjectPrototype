@@ -18,10 +18,11 @@ import ProfilePage from "./components/ProfilePage";
 import LocationHours from "./components/LocationHours";
 import ResearchPage from "./components/ResearchPage";
 import CheckoutsPage from "./components/CheckoutsPage";
+import {AuthProvider} from "./context/AuthContext";
 
 function App() {
     return (
-        <PrimeReactProvider>
+        <AuthProvider>
             <div className="App" style={{overflowX: "hidden", overflowY: "hidden"}}>
                 <Router>
                     <Routes>
@@ -36,7 +37,7 @@ function App() {
                     </Routes>
                 </Router>
             </div>
-        </PrimeReactProvider>
+        </AuthProvider>
     );
 }
 

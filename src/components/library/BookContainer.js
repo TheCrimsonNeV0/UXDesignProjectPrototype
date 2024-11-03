@@ -17,6 +17,9 @@ function BookContainer(props) {
                         <div style={{fontSize: "3vw", textAlign: "left"}}>
                             {props.author}
                         </div>
+                        <div style={{fontSize: "2vw", textAlign: "left"}}>
+                            Type: {props.type}
+                        </div>
                         <div style={{fontSize: "1vw", textAlign: "left", marginTop: "3vh"}}>
                             {props.description}
                         </div>
@@ -24,8 +27,11 @@ function BookContainer(props) {
                             <div className="grid">
                                 <div className="col-11"/>
                                 <div className="col-1">
-                                    <Button style={{position: "relative", bottom: 2, left: 0, width: "10vw", height: "8vh"}}
-                                            label="Place Hold" onClick={() => {alert("Hold Placed Successfully")}} />
+                                    <Button
+                                        style={{position: "relative", bottom: 2, left: 0, width: "10vw", height: "8vh"}}
+                                        label="Place Hold" onClick={() => {
+                                        alert("Hold Placed Successfully")
+                                    }}/>
                                 </div>
                             </div>
                         </div>

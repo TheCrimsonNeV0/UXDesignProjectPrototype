@@ -24,6 +24,12 @@ function CheckoutsPage(props) {
                 </div>
                 <div className="col-5"/>
             </div>
+            <div className={"grid"} style={{marginTop: "1vh", fontSize: "3vh", textAlign: "left"}}>
+                <div className="col-1" />
+                <div>
+                    Count: 1
+                </div>
+            </div>
             <div style={{marginTop: "5vh"}}>
                 <SearchBarCheckouts/>
             </div>

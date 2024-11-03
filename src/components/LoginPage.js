@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import TopMenu from "./TopMenu";
 import BottomMenu from "./BottomMenu";
 import LoginModule from "./login/LoginModule";
+import {AuthContext} from "../context/AuthContext";
 
 function LoginPage(props) {
     return (

@@ -26,7 +26,7 @@ function ProfileModule(props) {
                             Phone Number:
                         </div>
                         <div className="col-8">
-                            +1555555555
+                            +1 (555) 555-5555
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ function ProfileModule(props) {
                             E-mail:
                         </div>
                         <div className="col-8">
-                            nevzatumut2001@gmail.com
+                            nevzat@mail.com
                         </div>
                     </div>
                 </div>
