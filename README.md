@@ -1,5 +1,4 @@
-# University of North Florida
-# CAP 6100 - User Experience Design
+# University of North Florida CAP 6100 - User Experience Design
 
 This project contains the prototype page developed for the Jacksonville Public Library system.
 
