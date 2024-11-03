@@ -13,6 +13,10 @@ function MenuSelectionProfile(props) {
         navigate("/checkouts");
     }
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div className="grid">
             <div className="col-2"/>
@@ -25,10 +29,10 @@ function MenuSelectionProfile(props) {
                         <Button style={{width: "15vw", height: "5vh"}} label="Checkouts" onClick={checkoutsClick}/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "5vh"}} label="Bookmarks"/>
+                        <Button style={{width: "15vw", height: "5vh"}} label="Bookmarks" onClick={notImplementedClick}/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "5vh"}} label="History"/>
+                        <Button style={{width: "15vw", height: "5vh"}} label="History" onClick={notImplementedClick}/>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,10 @@ import {Button} from "primereact/button";
 import {Calendar} from "primereact/calendar";
 
 function ContentTypeFilterResearch(props) {
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div>
             <div> Peer-reviewed: <Checkbox/></div>
@@ -21,7 +25,7 @@ function ContentTypeFilterResearch(props) {
                     </div>
                 </div>
             </div>
-            <div style={{marginTop: "1vh"}}><Button label="Apply Filters"/></div>
+            <div style={{marginTop: "1vh"}}><Button label="Apply Filters" onClick={notImplementedClick}/></div>
         </div>
     );
 }

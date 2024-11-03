@@ -21,6 +21,10 @@ function TopMenu(props) {
         navigate("/profile");
     };
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div className="grid">
             <div className="col-1">
@@ -35,16 +39,19 @@ function TopMenu(props) {
                 <div className={"grid"}>
                     <div className={"col-3"}>
                         <Button style={{width: "6vh", height: "6vh", marginTop: "1vh",
-                            backgroundColor: "green"}} icon="pi pi-phone"/>
+                            backgroundColor: "green"}} icon="pi pi-phone"
+                                onClick={notImplementedClick}/>
                     </div>
                     <div className={"col-3"}>
                         <Button style={{width: "6vh", height: "6vh", marginTop: "1vh",
-                            backgroundColor: "lightgray"}} icon="pi pi-envelope"/>
+                            backgroundColor: "lightgray"}} icon="pi pi-envelope"
+                                onClick={notImplementedClick}/>
                     </div>
 
                     <div className={"col-3"}>
                         <Button style={{width: "6vh", height: "6vh", marginTop: "1vh",
-                            backgroundColor: "orange"}} icon="pi pi-question"/>
+                            backgroundColor: "orange"}} icon="pi pi-question"
+                                onClick={notImplementedClick}/>
                     </div>
 
                     <div className={"col-3"}>

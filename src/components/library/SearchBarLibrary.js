@@ -20,6 +20,10 @@ function SearchBarLibrary(props) {
         navigate("/profile"); // To view the interlibrary loans in the prototype
     }
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div>
             <div className="grid" style={{height: "12vh"}}>
@@ -41,7 +45,7 @@ function SearchBarLibrary(props) {
                     />
                 </div>
                 <div className="col-1">
-                    <Button label="Filters" style={{width: "100%", height: "8vh", top: "10%"}}/>
+                    <Button label="Filters" style={{width: "100%", height: "8vh", top: "10%"}} onClick={notImplementedClick}/>
                 </div>
                 <div className="col-1"/>
                 <div className="col-2">

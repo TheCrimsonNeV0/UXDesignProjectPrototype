@@ -7,27 +7,32 @@ const languages = ["English", "Spanish", "French", "Italian", "Japanese"]
 function BottomMenu(props) {
     const [language, setLanguage] = useState("English");
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
+
     return (
         <div className="grid">
             <div className="col-10">
                 <div className="grid">
                     <div className="col-2">
-                        <Button label="News" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="News" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                     <div className="col-2">
-                        <Button label="FAQ" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="FAQ" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                     <div className="col-2">
-                        <Button label="Blog" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="Blog" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                     <div className="col-2">
-                        <Button label="Meeting Rooms" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="Meeting Rooms" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                     <div className="col-2">
-                        <Button label="About Policies" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="About Policies" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                     <div className="col-2">
-                        <Button label="Volunteer" style={{width: "10vw", fontSize: "1vw"}}/>
+                        <Button label="Volunteer" style={{width: "10vw", fontSize: "1vw"}} onClick={notImplementedClick}/>
                     </div>
                 </div>
             </div>

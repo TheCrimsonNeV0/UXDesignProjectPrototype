@@ -18,6 +18,10 @@ function UserStatsCard(props) {
         navigate('/');
     };
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div>
             <Card style={{width: "100%", height: "100%", outline: '2px solid black', textAlign: "left", fontSize: "1vw"}}>
@@ -40,7 +44,8 @@ function UserStatsCard(props) {
                                 </div>
                                 <div className="col-3">
                                     <Button label="Request New Loan"
-                                            style={{backgroundColor: "lightcoral", marginTop: "1.5vh", marginLeft: "2vw"}}/>
+                                            style={{backgroundColor: "lightcoral", marginTop: "1.5vh", marginLeft: "2vw"}}
+                                            onClick={notImplementedClick}/>
                                 </div>
                             </div>
                         </div>

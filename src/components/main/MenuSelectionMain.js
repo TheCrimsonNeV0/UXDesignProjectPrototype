@@ -13,6 +13,10 @@ function MenuSelectionMain(props) {
         navigate("/locations");
     }
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div className="grid">
             <div className="col-2"/>
@@ -28,7 +32,7 @@ function MenuSelectionMain(props) {
                         <Button style={{width: "15vw", height: "10vh"}} label="Locations & Hours" onClick={locationsClick}/>
                     </div>
                     <div className="col-3">
-                        <Button style={{width: "15vw", height: "10vh"}} label="Connect"/>
+                        <Button style={{width: "15vw", height: "10vh"}} label="Connect" onClick={notImplementedClick}/>
                     </div>
                 </div>
             </div>

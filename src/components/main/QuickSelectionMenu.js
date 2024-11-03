@@ -17,6 +17,10 @@ function QuickSelectionMenu(props) {
         navigate("/research");
     }
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div className="grid" style={{height: "auto"}}>
             <div className="col-2"/>
@@ -33,7 +37,8 @@ function QuickSelectionMenu(props) {
                     <div className="col-3">
                         <div style={{textAlign: "center"}}>
                             <Button style={{backgroundColor: "gray", height: "20vh", width: "20vh"}}
-                                    icon={<i className="pi pi-tablet" style={{fontSize: "12vh"}}></i>}/>
+                                    icon={<i className="pi pi-tablet" style={{fontSize: "12vh"}}
+                                    onClick={notImplementedClick}></i>}/>
                             <p>Digital Library</p>
                         </div>
                     </div>

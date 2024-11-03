@@ -78,7 +78,7 @@ function LoginModule(props) {
                 <div className="col-4"/>
                 <div className="col-4">
                     <Button label="Login" style={{width: "100%"}} onClick={(e) => {
-                        alert("Login Successful");
+                        alert("Logged in Successfully");
                         loginClick();
                     }}/>
                 </div>

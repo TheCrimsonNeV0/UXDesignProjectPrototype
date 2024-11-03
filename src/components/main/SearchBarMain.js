@@ -10,6 +10,10 @@ function SearchBarMain(props) {
         navigate('/library');
     }
 
+    const notImplementedClick = () => {
+        alert("Feature not implemented");
+    }
+
     return (
         <div className="grid">
             <div className="col-2"/>
@@ -21,7 +25,8 @@ function SearchBarMain(props) {
                 <InputText style={{width: "100%", height: "8vh"}}/>
             </div>
             <div className="col-1">
-                <Button label="Filters" style={{width: "100%", height: "8vh"}}/>
+                <Button label="Filters" style={{width: "100%", height: "8vh"}}
+                onClick={notImplementedClick}/>
             </div>
             <div className="col-2"/>
         </div>
