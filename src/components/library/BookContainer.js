@@ -29,8 +29,8 @@ function BookContainer(props) {
                                 <div className="col-1">
                                     <Button
                                         style={{position: "relative", bottom: 2, left: 0, width: "10vw", height: "8vh"}}
-                                        label="Place Hold" onClick={() => {
-                                        alert("Hold Placed Successfully")
+                                        label={props.type === "Book" || props.type === "Audiobook" ? "Place Hold" : "Download"} onClick={() => {
+                                        alert("Hold Placed / Downloaded Successfully")
                                     }}/>
                                 </div>
                             </div>
