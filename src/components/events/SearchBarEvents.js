@@ -4,7 +4,7 @@ import {InputText} from "primereact/inputtext";
 import {Dropdown} from "primereact/dropdown";
 import { useNavigate } from 'react-router-dom';
 
-let locations = ["All Branches", "Main Branch", "Beaches Branch", "Mandarin Branch", "Regency Square Branch", "University Park Branch"]
+let locations = ["Online", "All Branches", "Main Branch", "Beaches Branch", "Mandarin Branch", "Regency Square Branch", "University Park Branch"]
 let age_groups = ["0-7", "7-14", "14-21", "21 and older"]
 
 function SearchBarEvents(props) {
