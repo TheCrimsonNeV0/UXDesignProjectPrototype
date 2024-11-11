@@ -10,7 +10,7 @@ function UserStatsCard(props) {
 
     const navigate = useNavigate();
 
-    let items = [{label: 'Book1'}, {label: 'Book2'}, {label: 'Book3'}];
+    let items = [{label: 'Titanic (Main Branch)'}, {label: 'Just for the Summer (Brentwood Branch)'}, {label: 'Wicked (Mandarin Branch)'}];
 
     const logoutClick = () => {
         setIsLoggedIn(false);

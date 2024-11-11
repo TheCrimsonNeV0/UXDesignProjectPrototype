@@ -24,6 +24,9 @@ function EventContainer(props) {
                     <div style={{fontSize: "1.5vw"}}>
                         {props.event.date}
                     </div>
+                    <div style={{fontSize: "1.5vw"}}>
+                        Type: {props.event.type}
+                    </div>
                     <div style={{marginTop: "1vh", fontSize: "1.5vw"}}>
                         <Button style={{width: "15vh"}} label="Enroll" onClick={() => {
                             alert("Enrolled Successfully");

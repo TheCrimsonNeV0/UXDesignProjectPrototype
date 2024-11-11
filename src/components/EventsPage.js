@@ -13,22 +13,26 @@ function EventsPage(props) {
         {
             image: storytelling,
             name: "Storytelling Course",
-            date: "12/03/2024"
+            date: "12/03/2024",
+            type: "Online"
         },
         {
             image: crafting,
             name: "Crafting Course",
-            date: "12/15/2024"
+            date: "12/15/2024",
+            type: "In-person"
         },
         {
             image: puzzle,
             name: "Puzzle Day",
-            date: "12/18/2024"
+            date: "12/18/2024",
+            type: "In-person"
         },
         {
             image: cartoon_club,
             name: "Cartoon Club",
-            date: "12/21/2024"
+            date: "12/21/2024",
+            type: "Online"
         }
     ];
 
