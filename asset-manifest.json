@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/UXDesignProjectPrototype/static/css/main.600df88a.css",
+    "main.js": "/UXDesignProjectPrototype/static/js/main.9023fb9b.js",
+    "static/media/event.jpg": "/UXDesignProjectPrototype/static/media/event.078b3c9f6a67c08f7153.jpg",
+    "static/media/InterVariable-Italic.woff2": "/UXDesignProjectPrototype/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
+    "static/media/InterVariable.woff2": "/UXDesignProjectPrototype/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
+    "static/media/primeicons.svg": "/UXDesignProjectPrototype/static/media/primeicons.6ed59f962963a4a73af2.svg",
+    "static/media/crafting.webp": "/UXDesignProjectPrototype/static/media/crafting.84b535ab4b7a92691a6b.webp",
+    "static/media/research_paper_placeholder.jpg": "/UXDesignProjectPrototype/static/media/research_paper_placeholder.5ff227521bfd40f38d43.jpg",
+    "static/media/primeicons.eot": "/UXDesignProjectPrototype/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
+    "static/media/primeicons.woff": "/UXDesignProjectPrototype/static/media/primeicons.8931fda1930c3bd21e96.woff",
+    "static/media/primeicons.ttf": "/UXDesignProjectPrototype/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
+    "static/media/regency_square.png": "/UXDesignProjectPrototype/static/media/regency_square.3395e095cd3d289e8a65.png",
+    "static/media/primeicons.woff2": "/UXDesignProjectPrototype/static/media/primeicons.024b32cc7bf399b1a847.woff2",
+    "static/media/beaches.jpg": "/UXDesignProjectPrototype/static/media/beaches.154552cf252c623d1842.jpg",
+    "static/media/mainlib.gif": "/UXDesignProjectPrototype/static/media/mainlib.fa7603363d7aff1406e8.gif",
+    "static/media/brentwood.jpg": "/UXDesignProjectPrototype/static/media/brentwood.7a44ea6578170d0a4864.jpg",
+    "static/media/university.jpg": "/UXDesignProjectPrototype/static/media/university.079a7c2760a6a615b0ee.jpg",
+    "static/media/mandarin.jpg": "/UXDesignProjectPrototype/static/media/mandarin.ade0739bba1f6ba2e6c6.jpg",
+    "static/media/profile.jpg": "/UXDesignProjectPrototype/static/media/profile.5806aa7ffaea663a360d.jpg",
+    "static/media/cover.jpg": "/UXDesignProjectPrototype/static/media/cover.74320e643705aeac3346.jpg",
+    "static/media/naughty_on_ice.jpg": "/UXDesignProjectPrototype/static/media/naughty_on_ice.e46174a0f967c95a221c.jpg",
+    "static/media/the_lord_of_the_rings.webp": "/UXDesignProjectPrototype/static/media/the_lord_of_the_rings.1fdaf62877b9b57da3ce.webp",
+    "static/media/puzzle.jpg": "/UXDesignProjectPrototype/static/media/puzzle.4f0eb4077dc70f683c17.jpg",
+    "static/media/storytelling.jpg": "/UXDesignProjectPrototype/static/media/storytelling.89bb769eedc5bc666091.jpg",
+    "index.html": "/UXDesignProjectPrototype/index.html",
+    "main.600df88a.css.map": "/UXDesignProjectPrototype/static/css/main.600df88a.css.map",
+    "main.9023fb9b.js.map": "/UXDesignProjectPrototype/static/js/main.9023fb9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.600df88a.css",
+    "static/js/main.9023fb9b.js"
+  ]
+}
