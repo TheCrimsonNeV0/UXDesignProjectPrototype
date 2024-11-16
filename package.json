@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://thecrimsonnev0.github.io/UXDesignProjectPrototype/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
