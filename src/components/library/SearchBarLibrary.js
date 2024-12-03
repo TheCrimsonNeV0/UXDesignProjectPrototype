@@ -17,7 +17,7 @@ function SearchBarLibrary(props) {
     }
 
     const interlibraryLoansClick = () => {
-        navigate("/profile"); // To view the interlibrary loans in the prototype
+        navigate("/loans"); // To view the interlibrary loans in the prototype
     }
 
     const notImplementedClick = () => {

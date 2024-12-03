@@ -18,8 +18,8 @@ function UserStatsCard(props) {
         navigate('/');
     };
 
-    const notImplementedClick = () => {
-        alert("Feature not implemented");
+    const requestLoanClick = () => {
+        navigate('/loans');
     }
 
     return (
@@ -45,7 +45,7 @@ function UserStatsCard(props) {
                                 <div className="col-3">
                                     <Button label="Request New Loan"
                                             style={{backgroundColor: "lightcoral", marginTop: "1.5vh", marginLeft: "2vw"}}
-                                            onClick={notImplementedClick}/>
+                                            onClick={requestLoanClick}/>
                                 </div>
                             </div>
                         </div>

@@ -19,6 +19,7 @@ import LocationHours from "./components/LocationHours";
 import ResearchPage from "./components/ResearchPage";
 import CheckoutsPage from "./components/CheckoutsPage";
 import {AuthProvider} from "./context/AuthContext";
+import InterlibraryLoansPage from "./components/InterlibraryLoansPage";
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                         <Route path="/locations" element={<LocationHours />} />
                         <Route path="/research" element={<ResearchPage />} />
                         <Route path="/checkouts" element={<CheckoutsPage />} />
+                        <Route path="/loans" element={<InterlibraryLoansPage />} />
                     </Routes>
                 </Router>
             </div>

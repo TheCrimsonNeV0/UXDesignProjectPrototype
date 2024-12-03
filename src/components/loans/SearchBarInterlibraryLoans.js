@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
+import {useNavigate} from "react-router-dom";
 import {Button} from "primereact/button";
 import {InputText} from "primereact/inputtext";
-import {Dropdown} from "primereact/dropdown";
-import {useNavigate} from "react-router-dom";
 
-function SearchBarCheckouts(props) {
+function SearchBarInterlibraryLoans(props) {
     const navigate = useNavigate();
 
     const homeClick = () => {
@@ -31,12 +30,16 @@ function SearchBarCheckouts(props) {
                         }}
                     />
                 </div>
-                <div className="col-1">
-                    <Button label="Filters" style={{width: "100%", height: "6vh", top: "10%"}}/>
+                <div className="col-1"/>
+                <div className="col-2">
+                    <Button label="Request New Loan" style={{width: "100%", height: "6vh", top: "10%", backgroundColor: "lightcoral"}}
+                    onClick={(e) => {
+                        alert("Feature not implemented");
+                    }}/>
                 </div>
             </div>
         </div>
     );
 }
 
-export default SearchBarCheckouts;
+export default SearchBarInterlibraryLoans;
