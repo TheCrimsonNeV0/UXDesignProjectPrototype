@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TopMenu from "./TopMenu";
 import SearchBarLibrary from "./library/SearchBarLibrary";
 import ContentTypeFilterLibrary from "./library/ContentTypeFilterLibrary";
@@ -9,7 +9,7 @@ import the_lord_of_the_rings from '../images/books/the_lord_of_the_rings.webp'
 
 function LibraryCatalogPage(props) {
 
-    const books = [{
+    const libraryContent = [{
         cover: to_kill_a_mockingbird,
         name: 'To Kill a Mockingbird',
         author: 'Harper Lee',
@@ -30,6 +30,18 @@ function LibraryCatalogPage(props) {
     }
     ];
 
+    const books = libraryContent.filter(book => book.type === "Book");
+    const eBooks = libraryContent.filter(book => book.type === "eBook");
+
+    let [displayList, setDisplayList] = useState(props.isDigital ? eBooks : libraryContent);
+
+    const onTypeChange = (value) => {
+        if (value === "All") setDisplayList(libraryContent);
+        else if (value === "Books") setDisplayList(books);
+        else if (value === "eBooks") setDisplayList(eBooks);
+        else setDisplayList([]);
+    }
+
     return (
         <div>
             <TopMenu/>
@@ -44,11 +56,11 @@ function LibraryCatalogPage(props) {
                 <SearchBarLibrary/>
             </div>
             <div className="grid">
-                <div className="col-1" style={{marginTop: "5vh", marginLeft: "2vw"}}>
-                    <ContentTypeFilterLibrary/>
+                <div className="col-2" style={{marginTop: "5vh", marginLeft: "2vw"}}>
+                    <ContentTypeFilterLibrary isDigital={props.isDigital} onTypeChange={onTypeChange}/>
                 </div>
-                <div className="col-10" style={{marginTop: "5vh", marginLeft: "3vw"}}>
-                    {books.map((book, index) => (
+                <div className="col-9" style={{marginTop: "5vh", marginLeft: "3vw"}}>
+                    {displayList.map((book, index) => (
                         <BookContainer
                             key={index}
                             cover={book.cover}

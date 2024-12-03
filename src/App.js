@@ -27,7 +27,8 @@ function App() {
                 <Router>
                     <Routes>
                         <Route path="/" element={<MainPage />} />
-                        <Route path="/library" element={<LibraryCatalogPage />} />
+                        <Route path="/library" element={<LibraryCatalogPage isDigital={false}/>} />
+                        <Route path="/library/digital" element={<LibraryCatalogPage isDigital={true}/>} />
                         <Route path="/events" element={<EventsPage />} />
                         <Route path="/login" element={<LoginPage />} />
                         <Route path="/profile" element={<ProfilePage />} />

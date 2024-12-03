@@ -9,6 +9,10 @@ function QuickSelectionMenu(props) {
         navigate("/library");
     };
 
+    const digitalLibraryClick = () => {
+        navigate("/library/digital");
+    };
+
     const eventsClick = () => {
         navigate("/events");
     }
@@ -38,7 +42,7 @@ function QuickSelectionMenu(props) {
                         <div style={{textAlign: "center"}}>
                             <Button style={{backgroundColor: "gray", height: "20vh", width: "20vh"}}
                                     icon={<i className="pi pi-tablet" style={{fontSize: "12vh"}}
-                                    onClick={notImplementedClick}></i>}/>
+                                    onClick={digitalLibraryClick}></i>}/>
                             <p>Digital Library</p>
                         </div>
                     </div>
