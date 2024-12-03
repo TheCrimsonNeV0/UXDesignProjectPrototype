@@ -17,17 +17,19 @@ function SearchBarMain(props) {
     return (
         <div className="grid">
             <div className="col-2"/>
+
             <div className="col-1">
-                <Button icon="pi pi-search" style={{height: "8vh", width: "8vh"}}
-                onClick={searchClick}/>
+                <Button label="Filters" style={{width: "100%", height: "8vh"}}
+                        onClick={notImplementedClick}/>
             </div>
             <div className="col-6">
                 <InputText style={{width: "100%", height: "8vh"}}/>
             </div>
             <div className="col-1">
-                <Button label="Filters" style={{width: "100%", height: "8vh"}}
-                onClick={notImplementedClick}/>
+                <Button icon="pi pi-search" style={{height: "8vh", width: "8vh"}}
+                        onClick={searchClick}/>
             </div>
+
             <div className="col-2"/>
         </div>
     );

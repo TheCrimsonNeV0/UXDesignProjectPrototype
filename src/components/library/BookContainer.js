@@ -25,7 +25,16 @@ function BookContainer(props) {
                         </div>
                         <div style={{marginTop: "2vh"}}>
                             <div className="grid">
-                                <div className="col-11"/>
+                                <div className="col-8"/>
+                                <div className="col-3" style={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    fontSize: "1vw"
+                                }}>
+                                    Available Branches: All
+                                </div>
+
                                 <div className="col-1">
                                     <Button
                                         style={{position: "relative", bottom: 2, left: 0, width: "10vw", height: "8vh"}}
