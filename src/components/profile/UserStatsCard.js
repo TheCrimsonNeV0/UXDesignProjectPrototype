@@ -18,7 +18,7 @@ function UserStatsCard(props) {
         navigate('/');
     };
 
-    const requestLoanClick = () => {
+    const interlibraryLoansClick = () => {
         navigate('/loans');
     }
 
@@ -43,9 +43,9 @@ function UserStatsCard(props) {
                                     <Menu style={{ width: "100%", marginTop: "1.5vh", marginLeft: "2vw"}} model={items}/>
                                 </div>
                                 <div className="col-3">
-                                    <Button label="Request New Loan"
+                                    <Button label="Show Details"
                                             style={{backgroundColor: "lightcoral", marginTop: "1.5vh", marginLeft: "2vw"}}
-                                            onClick={requestLoanClick}/>
+                                            onClick={interlibraryLoansClick}/>
                                 </div>
                             </div>
                         </div>

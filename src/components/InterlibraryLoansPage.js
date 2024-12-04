@@ -12,19 +12,19 @@ function InterlibraryLoansPage(props) {
             cover: titanic,
             name: "Titanic",
             author: "Geoff Tibballs",
-            borrowed_branch: "East Branch"
+            borrowed_branch: "Main Branch"
         },
         {
             cover: just_for_the_summer,
             name: "Just for the Summer",
             author: "Michelle Major",
-            borrowed_branch: "West Branch"
+            borrowed_branch: "Brentwood Branch"
         },
         {
             cover: wicked,
             name: "Wicked",
             author: "Gregory Maguire",
-            borrowed_branch: "North Branch"
+            borrowed_branch: "Mandarin Branch"
         }
     ];
 
