@@ -8,7 +8,7 @@ import 'primeflex/primeflex.css'; // PrimeFlex for grid system
 import { PrimeReactProvider } from 'primereact/api';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter, BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import MainPage from "./components/MainPage";
 import LibraryCatalogPage from "./components/LibraryCatalogPage";
@@ -25,7 +25,7 @@ function App() {
     return (
         <AuthProvider>
             <div className="App" style={{overflowX: "hidden", overflowY: "hidden"}}>
-                <Router>
+                <BrowserRouter basename="/UXDesignProjectPrototype">
                     <Routes>
                         <Route path="/" element={<MainPage />} />
                         <Route path="/library" element={<LibraryCatalogPage isDigital={false}/>} />
@@ -38,7 +38,7 @@ function App() {
                         <Route path="/checkouts" element={<CheckoutsPage />} />
                         <Route path="/loans" element={<InterlibraryLoansPage />} />
                     </Routes>
-                </Router>
+                </BrowserRouter>
             </div>
         </AuthProvider>
     );
